@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-const nggUrl = 'https://thundr-unblocker.vercel.app/service/hvtrs8%2F-wuw%2Ctkkvoi.aoo%2Fgxrlmrg';
+const nggUrl = 'https://now.gg/apps/a/19900/b.html';
 
 const proxy = createProxyMiddleware({
   target: nggUrl,
@@ -11,7 +11,7 @@ const proxy = createProxyMiddleware({
   secure: true,
   logLevel: 'debug',
   router: function(req) {
-    if (req.headers.host === 'deadshot.io') {
+    if (req.headers.host === 'now.gg') {
       req.headers['X-Forwarded-For'] = ''; 
       req.headers['X-Real-IP'] = '';
       req.headers['Via'] = '';
