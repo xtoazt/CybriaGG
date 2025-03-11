@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-const nggUrl = 'https://ilovemen.vercel.app/service/hvtrs8%2F-wuw%2Ctkkvoi.aoo%2Fgxrlmrg';
+const nggUrl = 'https://thundr-unblocker.vercel.app/service/hvtrs8%2F-wuw%2Ctkkvoi.aoo%2Fgxrlmrg';
 
 const proxy = createProxyMiddleware({
   target: nggUrl,
