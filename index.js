@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-const nggUrl = 'https://thefiremovies.vercel.app/';
+const nggUrl = 'https://deadsimplechat.com/NFlUsmyDQ/';
 
 const proxy = createProxyMiddleware({
   target: nggUrl,
