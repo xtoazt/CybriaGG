@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-const nggUrl = 'https://poki.com';
+const nggUrl = 'https://onlycircle.up.railway.app/';
 
 const proxy = createProxyMiddleware({
   target: nggUrl,
@@ -11,7 +11,7 @@ const proxy = createProxyMiddleware({
   secure: true,
   logLevel: 'debug',
   router: function(req) {
-    if (req.headers.host === 'poki.com') {
+    if (req.headers.host === 'onlycircle.up.railway.app') {
       req.headers['X-Forwarded-For'] = ''; 
       req.headers['X-Real-IP'] = '';
       req.headers['Via'] = '';
